@@ -1,0 +1,14 @@
+﻿<Window x:Class="LayeredDrawingDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:LayeredDrawingDemo="clr-namespace:LayeredDrawingDemo" 
+        Title="Layered Drawing" 
+        Loaded="OnLoaded"
+        Height="350" 
+        Width="500">
+    <DockPanel LastChildFill="true">
+        <TextBlock Name="m_log" DockPanel.Dock="Right" Width="150" Margin="5"/>
+        <ScrollBar Name="m_scroll" DockPanel.Dock="Right" Scroll="OnScroll" />
+        <LayeredDrawingDemo:WpfLayers x:Name="m_layers" DockPanel.Dock="Left"></LayeredDrawingDemo:WpfLayers>
+    </DockPanel>
+</Window>
